@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Own Adventure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Your Adventure Begins</h1>
+    </header>
+    <main>
+        <div id="story"></div>
+        <div id="choices"></div>
+        <div id="image-container"></div>
+    </main>
+    <button id="restart">Restart Game</button>
+    <script src="script.js"></script>
+    <footer>
+        <h2>Addendum</h2>
+        <p>Process and Creative Choices: I developed a fantasy-themed adventure with multiple paths and endings, using a modular structure with JavaScript objects for easy management. The user interface was designed to be intuitive, with clear text descriptions and clickable choices. Image placeholders were included to enhance immersion.</p>
+        
+        <p>Challenges and Solutions:</p>
+        <ul>
+            <li>Challenge: Maintaining story coherence across multiple paths.
+                Solution: Created a flowchart before coding to ensure logical progression.</li>
+            <li>Challenge: Implementing restart functionality without page reload.
+                Solution: Designed a startGame() function to reset game state and update UI.</li>
+            <li>Challenge: Ensuring all paths lead to satisfying conclusions.
+                Solution: Crafted multiple endings tied to specific choices for a sense of consequence.</li>
+        </ul>
+        
+        <p>Insights Gained:</p>
+        <ul>
+            <li>Learned the importance of modular design in managing complex narratives.</li>
+            <li>Realized the significance of clear, concise writing in interactive fiction.</li>
+            <li>Gained insights into client-side state management.</li>
+            <li>Discovered the scalability of the structure for more complex narratives.</li>
+            <li>Experienced how coding can be a creative medium for interactive storytelling.</li>
+        </ul>
+        
+        <p>This project enhanced both my JavaScript skills and my understanding of interactive narrative design and user experience in web applications.</p>
+        
+        <p>Last updated: <span id="lastModified"></span></p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
